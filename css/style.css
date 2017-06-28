@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.green {
+    color: #61E5C7;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+
+h1 {
+    font-weight: normal;
+}
+
+iframe {
+    border: 1px solid #999;
+    padding: 40px;
+    border-radius: 5px;
+}
