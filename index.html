@@ -1,51 +1,165 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Eric James Robinson Tutoring</title>
-    <meta name="description" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Eric James Robinson Tutoring</title>
+  <meta name="description" content="">
 
-    <meta name="viewport" content="user-scalable=no,width=500">
+  <!-- <meta name="viewport" content="user-scalable=no,width=500"> -->
+  <meta content="width=device-width,initial-scale=1" name=viewport>
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <script>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script>
   function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
   }
 </script>
 </head>
 <body>
-    <a name="schedule"></a>
-    <img class="logo" src="https://i.imgur.com/DTMN0MY.jpg" alt="Smiley face">
-    <h1>
-        General Chemistry I &amp; II Tutoring
-    </h1> 
-    <span class="header-links"><a href="#schedule">Schedule</a>--<a href="#about">About</a>--<a href="#contact">Contact</a></span>
-    <div class="frame" id="schedule"><h2>Schedule</h2>
-    <iframe 
-        id="schedulista-widget-00" 
-        src="https://www.schedulista.com/schedule/ejrtutoring?mode=widget" 
-        allowtransparency="false"  
-        width="80%" 
-        scrolling="no"
-        onload="resizeIframe(this)"
-    ></iframe>
-    <script 
-        id="schedulista-widget-script-00" 
-        type="text/javascript" 
-        src="https://www.schedulista.com/schedule/ejrtutoring/widget.js"
-    ></script>
+  <div class="green-section section">
+    <div class="container center">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="logo-container">
+            <img src="/images/logo.png" alt="">
+          </div>
+          <div class="hero-links">
+            <a href="#schedule">
+              Schedule
+            </a>
+            -
+            <a href="#about">
+              About
+            </a>
+            -
+            <a href="#contact">
+              Contact
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </div>
+  <div class="white-section section" id="schedule">
+    <div class="container center jumbo-container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <h1>
+            Chemistry &amp; Math Tutoring
+          </h1>
+          <p>
+            Personalized one-on-one or pair tutoring
+            sessions in General Chemistry I &amp; II 
+            and/or Math topics.
+          </p>
+          <p>
+            <a href='http://ejrtutoring.schedulista.com' target='_blank'>
+              <img alt='Schedule an Online Appointment' 
+                height='44px' 
+                src='http://www.schedulista.com/assets/schedule_button@2x.png'
+                title='Schedule an Appointment Online'
+              >
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>        
+  </div>
+  <div class="green-section section">
+    <div class="container">
+      <div class="row center">
+        <div class="col-sm-12">
+          <h2>Teaching in all areas of general math and chemistry including:</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3">
+          <div class="center list-image-header">
+            <img src="/images/atom.png" alt="">
+          </div>
+          <ul>
+            <li>Properties of Solutions</li>
+            <li>Chemical Equilibria</li>
+            <li>Acids and Bases</li>
+            <li>Energy, Enthalpy, and Thermo</li>
+            <li>Kinetics</li>
+          </ul>
+        </div>
+        <div class="col-sm-5 col-md-4 col-lg-3">
+          <div class="center list-image-header">
+            <img src="/images/pi.png" alt="">
+          </div>
+          <ul>
+            <li>Functions and Models</li>
+            <li>Limits and Derivatives</li>
+            <li>Differentiation Rules &amp; Applications</li>
+            <li>Techniques of Integration</li>
+            <li>Infinite Sequences &amp; Series</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div id="contact"><h2>Contact</h2></div>
-    <div id="about"><h2>About</h2>
+  </div>
+  <div class="section white-section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+          <h2>About Me:</h2>
+          <p>
+            My name is Eric Robinson, and I graduated from Williams College 
+            in 2013 with a BA in Mathematics. While at Williams I focused 
+            in Operations Research, Real Analysis, and Applied Linear Algebra. 
+            Upon graduation I worked at Epic, a healthcare software company, 
+            as an interface developer and project manager. I came to Columbia 
+            in 2016 to complete the pre-requisites for medical school in the 
+            Post-bac program, and I plan to enter medical school in 2018.
+          </p>
+        </div>
+      </div>
     </div>
-    <!-- maxmcd: you probably want this -->
-    <script>
-        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-        ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+  </div>
+  
+  <div class="section green-section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h2 class="center">Contact</h2>
+          <div class="panel">
+            <div class="panel-body">
+              <form method="POST" action="http://formspree.io/ejr2167@columbia.edu">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="name" name="name" placeholder="Name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="phone" name="phone" placeholder="Phone" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea type="message" name="message" 
+                    placeholder="Message" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default btn-block">Send</button>
+              </form>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+  </script>
+
+  <script src="https://www.google-analytics.com/analytics.js" async defer>
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 </html>
