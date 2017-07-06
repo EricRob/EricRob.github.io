@@ -91,5 +91,9 @@ h1, .h1, h2, .h2, h3, .h3 {
     width: 270px;
 }
 
+.button-purple {
+    background-color: #BCA3C9;
+}
+
 /*******************/
 
