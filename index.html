@@ -39,6 +39,13 @@
 <body>
 <iframe src="./notaplaya_short.mp3" allow="autoplay" style="display:none" id="iframeAudio">
    </iframe> 
-    <div></div>
+    <div id="main" ></div>
+$(document).ready(function() {
+    $("#main").on("click", function(event) {
+        var x = event.pageX - this.offsetLeft;
+        var y = event.pageY - this.offsetTop;
+        alert("X Coordinate: " + x + " Y Coordinate: " + y);
+    });
+});
 </body>
 </html>
