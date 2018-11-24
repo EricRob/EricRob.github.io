@@ -8,8 +8,8 @@
 	<script>
     document.onclick = userClicked;
     function userClicked() {
-    var x = event.clientX;
-    var y = event.clientY;
+    var x = event.clientX - 100;
+    var y = event.clientY - 200;
     var snowball = document.getElementById("snowballAppear");
     snowball.style.display = '';
     snowball.style.position = 'absolute';
