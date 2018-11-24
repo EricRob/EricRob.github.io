@@ -4,8 +4,30 @@
 	<meta charset="UTF-8">
 	<title>Trav</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+    document.onclick = userClicked;
+    function userClicked() {
+    var x = event.clientX;
+    var y = event.clientY;
+    var snowball = document.getElementById("snowballAppear");
+    snowball.style.display = '';
+    snowball.style.position = 'absolute';
+    snowball.style.left = x + 'px';
+    snowball.style.top = y + 'px';
+}
+
+</script>
 </head>
 <body>
+
+
+<div class "container">
+    <div class "picture">
+        <img alt="snowballAppear" id="snowballAppear" style="display: none" src="./head.png">
+    </div>
+</div>
+
 <div class="center"><h3>Still Bangin</h3>
 	<iframe src="./notaplaya_short.mp3" allow="autoplay" style="display:none" id="iframeAudio">
 	</iframe>
