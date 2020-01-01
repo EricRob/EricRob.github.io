@@ -1,18 +1,31 @@
 html { 
-  background: url('./bjenny4.png') no-repeat center center fixed; 
+  background: url('https://media.giphy.com/media/10Bb1Bq7BMi9Co/giphy.gif');
+  background-color: coral 
 }
 
 h3 {
-  color: white;
+  color: cyan;
+}
+
+.title {
+	background-color: mediumpurple;
+}
+
+.center {
+	text-align: center;
+}
+
+.block {
+	background-color: black;
+	display: inline-block;
 }
 
 
-.center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-color: black
+.snake {
+	background-color: white;
+	display: inline-block;
+}
+
+.site-photo {
+	width: 600px;
 }

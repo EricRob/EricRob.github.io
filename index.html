@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Trav</title>
+	<title>Beeg Davis</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script>
@@ -16,20 +16,159 @@
     snowball.style.left = x + 'px';
     snowball.style.top = y + 'px';
 }
-
 </script>
 </head>
 <body>
 
+<table align="center">
+	<tbody>
+		<tr>
+			<td><img src="https://media.giphy.com/media/P41U9FUef8cXm/giphy.gif"></td>
+			<td><img src="./bdavisrn.png" class="title"></td>
+			<td><img src="https://media.giphy.com/media/P41U9FUef8cXm/giphy.gif"></td>
+		</tr>
+	</tbody>
+</table>
+<table border="3" width="900" cellspacing="4" cellpadding="0" height="168" align="center">
+	<tbody><tr>
+		<td valign="top" width="760">
+		<img border="0" width="325" height="129" src="./profphoto.png" align="left"><!--[endif]--><p align="justify" style="color:white;">
+		Welcome to Beeg Davus' WEbsite! This site is to recognize 
+		da best RN on tha waaaaard!!!
+	Isn't it kewl??? LOL!</p></td>
+	</tr>
+</tbody></table>
 
 <div class "container">
     <div class "picture">
-        <img alt="snowballAppear" id="snowballAppear" style="display: none" src="./farded.png">
+        <img alt="snowballAppear" id="snowballAppear" style="display: none" src="./kate.png">
     </div>
 </div>
 
-<div class="center"><h3>Still Bangin</h3>
-	<iframe src="./notaplaya_short.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-	</iframe>
-</div></body>
+
+<div>
+	<h3 align="center">Click <a href="https://www.daisyfoundation.org/daisy-in-training/honorees/bridget-davis" target="_blank">HERE</a> to see my DAISY!</h3>
+</div>
+<div align="center">
+<div class="snake" >
+<canvas width="400" height="400" id="game" ></canvas>
+<script>
+var canvas = document.getElementById('game');
+var context = canvas.getContext('2d');
+var grid = 16;
+var count = 0;
+
+var snake = {
+  x: 160,
+  y: 160,
+  dx: grid,
+  dy: 0,
+  cells: [],
+  maxCells: 4
+};
+var apple = {
+  x: 320,
+  y: 320
+};
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+function loop() {
+  requestAnimationFrame(loop);
+  if (++count < 4) {
+    return;
+  }
+  count = 0;
+  context.clearRect(0,0,canvas.width,canvas.height);
+  snake.x += snake.dx;
+  snake.y += snake.dy;
+  if (snake.x < 0) {
+    snake.x = canvas.width - grid;
+  }
+  else if (snake.x >= canvas.width) {
+    snake.x = 0;
+  }
+  if (snake.y < 0) {
+    snake.y = canvas.height - grid;
+  }
+  else if (snake.y >= canvas.height) {
+    snake.y = 0;
+  }
+  snake.cells.unshift({x: snake.x, y: snake.y});
+  if (snake.cells.length > snake.maxCells) {
+    snake.cells.pop();
+  }
+  context.fillStyle = 'red';
+  context.fillRect(apple.x, apple.y, grid-1, grid-1);
+  context.fillStyle = 'green';
+  snake.cells.forEach(function(cell, index) {
+    context.fillRect(cell.x, cell.y, grid-1, grid-1);
+    if (cell.x === apple.x && cell.y === apple.y) {
+      snake.maxCells++;
+      apple.x = getRandomInt(0, 25) * grid;
+      apple.y = getRandomInt(0, 25) * grid;
+    }
+    for (var i = index + 1; i < snake.cells.length; i++) {
+      if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+        alert((snake.maxcells-4)+"점");
+        snake.x = 160;
+        snake.y = 160;
+        snake.cells = [];
+        snake.maxCells = 4;
+        snake.dx = grid;
+        snake.dy = 0;
+        apple.x = getRandomInt(0, 25) * grid;
+        apple.y = getRandomInt(0, 25) * grid;
+      }
+    }
+  });
+}
+document.addEventListener('keydown', function(e) {
+
+  if (e.which === 37 && snake.dx === 0) {
+    snake.dx = -grid;
+    snake.dy = 0;
+  }
+  else if (e.which === 38 && snake.dy === 0) {
+    snake.dy = -grid;
+    snake.dx = 0;
+  }
+  else if (e.which === 39 && snake.dx === 0) {
+    snake.dx = grid;
+    snake.dy = 0;
+  }
+  else if (e.which === 40 && snake.dy === 0) {
+    snake.dy = grid;
+    snake.dx = 0;
+  }
+});
+requestAnimationFrame(loop);
+</script>
+</div>
+</div>
+<br>
+<div class="center">
+	<div class="block">
+		<h3> Some ppl pose for pics.... I take them!! LOL</h3>
+		<img class="site-photo" src="./beegcrouch.jpg">
+</div>
+</div>
+
+<div class="center">
+	<div class="block">
+		<h3>Who wore it better?</h3>
+		<img class="site-photo" src="./catbangs.jpg">
+		<img class="site-photo" src="./beegbangs.png">
+	</div>
+</div>
+
+<marquee scrollamount="30" style="font-family: Arial; font-size: 60pt; color: #FFFF00; font-weight: bold">&darr; &darr;BREAKING NEWS:&nbsp; Listen up, Buckaroo!! &darr; &darr;</marquee>
+
+<div class="center">
+	<div class="block">
+		<img class="site-photo" src="./idontgiveasip.jpg">
+	</div>
+</div>
+
 </html>
+
