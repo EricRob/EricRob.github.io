@@ -38,6 +38,11 @@ ul {
 	text-align: center;
 }
 
+.ppl-list {
+	background-color: orange;
+	display: inline-block;
+}
+
 .block {
 	background-color: mediumpurple;
 	display: inline-block;
