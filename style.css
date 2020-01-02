@@ -21,6 +21,19 @@ ul {
 	background-color: mediumpurple;
 }
 
+.tj-list-container {
+	background-color: yellow; 
+	display: inline-block;
+}
+
+.tj-list {
+	color: cyan;
+}
+
+.tj-pic {
+	width: 200px;
+}
+
 .center {
 	text-align: center;
 }
